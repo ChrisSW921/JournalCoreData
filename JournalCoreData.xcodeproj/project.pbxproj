@@ -9,23 +9,31 @@
 /* Begin PBXBuildFile section */
 		FF21879925B6330C00408C74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF21879825B6330C00408C74 /* AppDelegate.swift */; };
 		FF21879B25B6330C00408C74 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF21879A25B6330C00408C74 /* SceneDelegate.swift */; };
-		FF21879D25B6330C00408C74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF21879C25B6330C00408C74 /* ViewController.swift */; };
 		FF2187A025B6330C00408C74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF21879E25B6330C00408C74 /* Main.storyboard */; };
 		FF2187A325B6330C00408C74 /* JournalCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF2187A125B6330C00408C74 /* JournalCoreData.xcdatamodeld */; };
 		FF2187A525B6330D00408C74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF2187A425B6330D00408C74 /* Assets.xcassets */; };
 		FF2187A825B6330D00408C74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF2187A625B6330D00408C74 /* LaunchScreen.storyboard */; };
+		FF2187B825B633AE00408C74 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2187B725B633AE00408C74 /* CoreDataStack.swift */; };
+		FF2187BB25B6343900408C74 /* Entry+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2187BA25B6343900408C74 /* Entry+Convenience.swift */; };
+		FF2187BF25B6355B00408C74 /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2187BE25B6355B00408C74 /* EntryController.swift */; };
+		FF2187C325B6375500408C74 /* EntriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2187C225B6375500408C74 /* EntriesTableViewController.swift */; };
+		FF2187C625B6391F00408C74 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2187C525B6391F00408C74 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FF21879525B6330C00408C74 /* JournalCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JournalCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF21879825B6330C00408C74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF21879A25B6330C00408C74 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FF21879C25B6330C00408C74 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FF21879F25B6330C00408C74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF2187A225B6330C00408C74 /* JournalCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JournalCoreData.xcdatamodel; sourceTree = "<group>"; };
 		FF2187A425B6330D00408C74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF2187A725B6330D00408C74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF2187A925B6330E00408C74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF2187B725B633AE00408C74 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		FF2187BA25B6343900408C74 /* Entry+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entry+Convenience.swift"; sourceTree = "<group>"; };
+		FF2187BE25B6355B00408C74 /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
+		FF2187C225B6375500408C74 /* EntriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntriesTableViewController.swift; sourceTree = "<group>"; };
+		FF2187C525B6391F00408C74 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +66,52 @@
 		FF21879725B6330C00408C74 /* JournalCoreData */ = {
 			isa = PBXGroup;
 			children = (
-				FF21879825B6330C00408C74 /* AppDelegate.swift */,
-				FF21879A25B6330C00408C74 /* SceneDelegate.swift */,
-				FF21879C25B6330C00408C74 /* ViewController.swift */,
-				FF21879E25B6330C00408C74 /* Main.storyboard */,
-				FF2187A425B6330D00408C74 /* Assets.xcassets */,
-				FF2187A625B6330D00408C74 /* LaunchScreen.storyboard */,
-				FF2187A925B6330E00408C74 /* Info.plist */,
-				FF2187A125B6330C00408C74 /* JournalCoreData.xcdatamodeld */,
+				FF2187BD25B6355200408C74 /* Controllers */,
+				FF2187B625B633A200408C74 /* CoreData */,
+				FF2187B025B6331E00408C74 /* Resources */,
+				FF2187B325B6334400408C74 /* Views */,
 			);
 			path = JournalCoreData;
+			sourceTree = "<group>";
+		};
+		FF2187B025B6331E00408C74 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FF21879825B6330C00408C74 /* AppDelegate.swift */,
+				FF21879A25B6330C00408C74 /* SceneDelegate.swift */,
+				FF2187A425B6330D00408C74 /* Assets.xcassets */,
+				FF2187A925B6330E00408C74 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FF2187B325B6334400408C74 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FF21879E25B6330C00408C74 /* Main.storyboard */,
+				FF2187A625B6330D00408C74 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FF2187B625B633A200408C74 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				FF2187B725B633AE00408C74 /* CoreDataStack.swift */,
+				FF2187A125B6330C00408C74 /* JournalCoreData.xcdatamodeld */,
+				FF2187BA25B6343900408C74 /* Entry+Convenience.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		FF2187BD25B6355200408C74 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FF2187BE25B6355B00408C74 /* EntryController.swift */,
+				FF2187C225B6375500408C74 /* EntriesTableViewController.swift */,
+				FF2187C525B6391F00408C74 /* DetailViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,10 +184,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF21879D25B6330C00408C74 /* ViewController.swift in Sources */,
+				FF2187BF25B6355B00408C74 /* EntryController.swift in Sources */,
 				FF21879925B6330C00408C74 /* AppDelegate.swift in Sources */,
 				FF2187A325B6330C00408C74 /* JournalCoreData.xcdatamodeld in Sources */,
 				FF21879B25B6330C00408C74 /* SceneDelegate.swift in Sources */,
+				FF2187C325B6375500408C74 /* EntriesTableViewController.swift in Sources */,
+				FF2187B825B633AE00408C74 /* CoreDataStack.swift in Sources */,
+				FF2187BB25B6343900408C74 /* Entry+Convenience.swift in Sources */,
+				FF2187C625B6391F00408C74 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +340,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 883MB467TW;
-				INFOPLIST_FILE = JournalCoreData/Info.plist;
+				INFOPLIST_FILE = JournalCoreData/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,7 +359,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 883MB467TW;
-				INFOPLIST_FILE = JournalCoreData/Info.plist;
+				INFOPLIST_FILE = JournalCoreData/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
